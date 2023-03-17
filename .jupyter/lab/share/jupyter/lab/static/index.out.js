@@ -593,6 +593,16 @@ export async function main() {
       console.error(e);
     }
   }
+  if (!queuedFederated.includes('@axlair/jupyterlab_vim')) {
+    try {
+      let ext = require('@axlair/jupyterlab_vim');
+      for (let plugin of activePlugins(ext)) {
+        register.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
 
   // Add the federated extensions.
   const federatedExtensions = await Promise.allSettled(federatedExtensionPromises);

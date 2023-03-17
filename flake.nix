@@ -29,16 +29,20 @@
     (
       system: let
         inherit (jupyenv.lib.${system}) mkJupyterlabNew;
+        inherit (jupyenv.lib.${system}) mkJupyterl;
         jupyterlab = mkJupyterlabNew ({...}: {
           nixpkgs = inputs.nixpkgs;
           imports = [(import ./.env/kernels.nix)];
         });
+        pkgs = import nixpkgs{inherit system;};
       in rec {
         packages = {inherit jupyterlab;};
         packages.default = jupyterlab;
         apps.default.program = "${jupyterlab}/bin/jupyter-lab";
         apps.default.type = "app";
-        devShells.default = jupyterlab.env;
+        devShells.default = pkgs.mkShell{
+          buildInputs = [jupyterlab];
+        };
       }
     );
 }

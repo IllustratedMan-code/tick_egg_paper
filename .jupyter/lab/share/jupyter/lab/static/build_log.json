@@ -541,6 +541,9 @@
               "requiredVersion": "^13.5.17",
               "singleton": true
             },
+            "@axlair/jupyterlab_vim": {
+              "requiredVersion": "0.16.0"
+            },
             "@lumino/polling": {
               "requiredVersion": "^1.9.0"
             },

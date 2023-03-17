@@ -173,7 +173,8 @@
         "@jupyterlab/translation-extension": "~3.6.1",
         "@jupyterlab/ui-components-extension": "~3.6.1",
         "@jupyterlab/vdom-extension": "~3.6.1",
-        "@jupyterlab/vega5-extension": "~3.6.1"
+        "@jupyterlab/vega5-extension": "~3.6.1",
+        "@axlair/jupyterlab_vim": "file:../extensions/axlair-jupyterlab_vim-0.16.0.tgz"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^3.6.1",
@@ -251,7 +252,8 @@
             "@jupyterlab/tooltip-extension": "",
             "@jupyterlab/translation-extension": "",
             "@jupyterlab/ui-components-extension": "",
-            "@jupyterlab/vdom-extension": ""
+            "@jupyterlab/vdom-extension": "",
+            "@axlair/jupyterlab_vim": ""
         },
         "mimeExtensions": {
             "@jupyterlab/javascript-extension": "",
@@ -317,6 +319,12 @@
         ],
         "linkedPackages": {},
         "staticDir": "../static",
-        "extensionMetadata": {}
+        "extensionMetadata": {
+            "@axlair/jupyterlab_vim": {
+                "extension": true,
+                "outputDir": "jupyterlab_vim/labextension",
+                "schemaDir": "schema"
+            }
+        }
     }
 }

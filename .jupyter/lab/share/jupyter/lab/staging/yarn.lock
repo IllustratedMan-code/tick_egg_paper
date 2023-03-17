@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@axlair/jupyterlab_vim@file:../extensions/axlair-jupyterlab_vim-0.16.0.tgz":
+  version "0.16.0"
+  resolved "file:../extensions/axlair-jupyterlab_vim-0.16.0.tgz#a1a7a54e772af4805704e32111d4eb0d9b4b358a"
+  dependencies:
+    "@jupyterlab/application" "^3.0.0-rc.13"
+    "@jupyterlab/cells" "^3.0.0-rc.13"
+    "@jupyterlab/codemirror" "^3.0.0-rc.13"
+    "@jupyterlab/notebook" "^3.0.0-rc.13"
+    "@jupyterlab/settingregistry" "^3.0.0-rc.13"
+    "@lumino/commands" "^1.12.0"
+    "@lumino/coreutils" "^1.5.3"
+    "@lumino/domutils" "^1.2.3"
+    react "^17.0.1"
+
 "@babel/runtime@^7.1.2":
   version "7.14.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
@@ -97,7 +111,7 @@
     "@lumino/widgets" "^1.37.1"
     react "^17.0.1"
 
-"@jupyterlab/application@^3.6.1", "@jupyterlab/application@~3.6.1":
+"@jupyterlab/application@^3.0.0-rc.13", "@jupyterlab/application@^3.6.1", "@jupyterlab/application@~3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@jupyterlab%2fapplication/-/application-3.6.1.tgz#41b897a809847fcd9426fe12ab0415c4373d24ed"
   integrity sha512-EpZ5pByXqiNwX9Kj6H5UepYJ9nNI3uU0ule7vCHhLmvJTM9+ARUKT9a52qp2uAyZSjdihl1cHfVKONEM9Xn8fA==
@@ -284,7 +298,7 @@
     "@lumino/signaling" "^1.10.0"
     "@lumino/widgets" "^1.37.1"
 
-"@jupyterlab/cells@^3.6.1", "@jupyterlab/cells@~3.6.1":
+"@jupyterlab/cells@^3.0.0-rc.13", "@jupyterlab/cells@^3.6.1", "@jupyterlab/cells@~3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@jupyterlab%2fcells/-/cells-3.6.1.tgz#84c4a43cb66e94a934bcf25172b6ded64d87bba6"
   integrity sha512-Ojep4Sw83c4uzYSDMQcECW7wuan/dkerimKkb/5cm277ryHL51IgjZTEpJKaW8AeEjNxtAwjlo4cl/5KIwKvQw==
@@ -373,7 +387,7 @@
     "@jupyterlab/translation" "^3.6.1"
     codemirror "~5.61.0"
 
-"@jupyterlab/codemirror@^3.6.1", "@jupyterlab/codemirror@~3.6.1":
+"@jupyterlab/codemirror@^3.0.0-rc.13", "@jupyterlab/codemirror@^3.6.1", "@jupyterlab/codemirror@~3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@jupyterlab%2fcodemirror/-/codemirror-3.6.1.tgz#e21134b02d8ae5b6d971549a689b8462987d30c7"
   integrity sha512-hEjdAm1bSsBNuzjhnCJrphVdl8HZSGh/+q2MioyF7zRK+VbFarx7DKoYdAtaunHu5MkYA9NGf7mjLVyg17dK9g==
@@ -1298,7 +1312,7 @@
     "@lumino/messaging" "^1.10.0"
     "@lumino/widgets" "^1.37.1"
 
-"@jupyterlab/notebook@^3.6.1", "@jupyterlab/notebook@~3.6.1":
+"@jupyterlab/notebook@^3.0.0-rc.13", "@jupyterlab/notebook@^3.6.1", "@jupyterlab/notebook@~3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@jupyterlab%2fnotebook/-/notebook-3.6.1.tgz#9bb7d78c694f403b1b5d59889737e56c787348d2"
   integrity sha512-wkc0/HcnLhYSMtF1y5pf2ngvuhU0UE6tmIjCWl4rP0aC4aAjZZzkRNXV4EwNfY73fLT4EGB149l8Jv4vKUVGdQ==
@@ -1513,7 +1527,7 @@
     json-schema "~0.4.0"
     react "^17.0.1"
 
-"@jupyterlab/settingregistry@^3.6.1", "@jupyterlab/settingregistry@~3.6.1":
+"@jupyterlab/settingregistry@^3.0.0-rc.13", "@jupyterlab/settingregistry@^3.6.1", "@jupyterlab/settingregistry@~3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@jupyterlab%2fsettingregistry/-/settingregistry-3.6.1.tgz#cd04e64d598598950c64aa99e1fc8a2c962d8c31"
   integrity sha512-zNCYIK6/oWG6JnhmwRGE/Zvn5Xhj0kovcJgTlOSHGyIiHqLfJA9TzHZDNUDANqqxAg4+H9fYdh1+agi4XWGL8A==
@@ -1832,7 +1846,7 @@
   dependencies:
     "@lumino/algorithm" "^1.9.2"
 
-"@lumino/commands@^1.19.0", "@lumino/commands@^1.21.1":
+"@lumino/commands@^1.12.0", "@lumino/commands@^1.19.0", "@lumino/commands@^1.21.1":
   version "1.21.1"
   resolved "https://registry.yarnpkg.com/@lumino/commands/-/commands-1.21.1.tgz#eda8b3cf5ef73b9c8ce93b3b5cf66bb053df2a76"
   integrity sha512-d1zJmwz5bHU0BM/Rl3tRdZ7/WgXnFB0bM7x7Bf0XDlmX++jnU9k0j3mh6/5JqCGLmIApKCRwVqSaV7jPmSJlcQ==
@@ -1845,7 +1859,7 @@
     "@lumino/signaling" "^1.11.1"
     "@lumino/virtualdom" "^1.14.3"
 
-"@lumino/coreutils@^1.11.0", "@lumino/coreutils@^1.11.0 || ^2.0.0-alpha.6", "@lumino/coreutils@^1.12.1":
+"@lumino/coreutils@^1.11.0", "@lumino/coreutils@^1.11.0 || ^2.0.0-alpha.6", "@lumino/coreutils@^1.12.1", "@lumino/coreutils@^1.5.3":
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/@lumino/coreutils/-/coreutils-1.12.1.tgz#79860c9937483ddf6cda87f6c2b9da8eb1a5d768"
   integrity sha512-JLu3nTHzJk9N8ohZ85u75YxemMrmDzJdNgZztfP7F7T7mxND3YVNCkJG35a6aJ7edu1sIgCjBxOvV+hv27iYvQ==
@@ -1873,7 +1887,7 @@
     "@lumino/algorithm" "^1.9.2"
     "@lumino/signaling" "^1.11.1"
 
-"@lumino/domutils@^1.8.0", "@lumino/domutils@^1.8.2":
+"@lumino/domutils@^1.2.3", "@lumino/domutils@^1.8.0", "@lumino/domutils@^1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@lumino/domutils/-/domutils-1.8.2.tgz#d15cdbae12bea52852bbc13c4629360f9f05b7f5"
   integrity sha512-QIpMfkPJrs4GrWBuJf2Sn1fpyVPmvqUUAeD8xAQo8+4V5JAT0vUDLxZ9HijefMgNCi3+Bs8Z3lQwRCrz+cFP1A==
